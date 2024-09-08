@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 <body>
 
 <h2>Formulario</h2>
 
-<form action="/action_page.php">
-  <label for="fname">Nombre:</label><br>
-  <input type="text" id="fname" name="fname" value=""><br><br>
-  <label for="lname">Apellido Paterno:</label><br>
-  <input type="text" id="lname" name="lname" value=""><br><br>
-  <label for="lname">Apellido Materno:</label><br>
-  <input type="text" id="lname" name="lname" value=""><br><br>
-  <label for="lname">Correo:</label><br>
-  <input type="text" id="lname" name="lname" value=""><br><br>
-  <label for="lname">Mensaje:</label><br>
-  <input type="text" id="lname" name="lname" value=""><br><br>
+<form id="formulario" action="#">
+  <label for="nombre">Nombre:</label><br>
+  <input type="text" id="nombre" name="nombre" value=""><br><br>
+  <label for="apellidoP">Apellido Paterno:</label><br>
+  <input type="text" id="apellidoP" name="apellidoP" value=""><br><br>
+  <label for="apellidoM">Apellido Materno:</label><br>
+  <input type="text" id="apellidoM" name="apellidoM" value=""><br><br>
+  <label for="correo">Correo:</label><br>
+  <input type="text" id="correo" name="correo" value=""><br><br>
+  <label for="mensaje">Mensaje:</label><br>
+  <input type="text" id="mensaje" name="mensaje" value=""><br><br>
 
   <input type="submit" value="Validar Campos">
 
 </form> 
 
-<p></p>
+<p id="error" style="color:red;"></p>
+
+<script src="./ejercicio6.js"></script>
 
 </body>
 </html>
